@@ -19,9 +19,22 @@ const calculateSalesTax = function(amount, taxRate){
     };
     calculateSalesTax(100, 0.07);
     calculateSalesTax(500,0.1);
+
+
+
+ //Task 3- Employee Bonus Calculation
+ const calculateBonus = (salary, performanceRating) => {
+    if (performanceRating === "Excellent") {
+        Bonus = salary * .20
+    } else if (performanceRating === "Good") {
+        bonus = salary * .10
+    } else if (performanceRating === "Average") {
+        bonus = salary * 0.05
+    };
+    console.log(`Bonus: $${bonus}`);
+};
+
     
     
    
-
-    
 
