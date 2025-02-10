@@ -55,7 +55,25 @@ function calculateSubscriptionCost(plan, months, discount=0) {
 calculateSubscriptionCost("Basic", 6, 10);
 calculateSubscriptionCost("Premium", 12, 0);
 
-    
+
+//Task 5- Currency Conversion
+function convertCurrency(amount, exchangeRate) {
+if (amount < 0 || exchangeRate <= 0) {
+console.log("Error: Amount and exchange rate must be greater than 0");
+
+return;
+
+}
+
+const convertedAmount = amount * exchangeRate;
+console.log(`Converted Amount: $${convertedAmount.toFixed(2)}`);
+}
+convertCurrency(100, 1.1);
+convertCurrency(-100, 1.1);
+convertCurrency(250, 0.85);
+
+
+
     
    
 
