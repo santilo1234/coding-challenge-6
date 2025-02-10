@@ -72,6 +72,19 @@ convertCurrency(100, 1.1);
 convertCurrency(-100, 1.1);
 convertCurrency(250, 0.85);
 
+//Task 6- Bulk Orders Discount
+function applyDiscount(orders, discountedFunction) {
+!if (!Array.isArray(orders|| orders.some(order=> order<0)) {
+    console.log("Error: Orders must be an array of positive numbers");
+    return;
+}
+
+let orders = [200, 500, 600, 900, 1000];
+applyDiscount(orders, order=>);{
+    if(order > 500) return order * 0.9;
+    return order;  
+}
+
 
 
     
