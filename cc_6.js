@@ -32,7 +32,28 @@ const calculateSalesTax = function(amount, taxRate){
         bonus = salary * 0.05
     };
     console.log(`Bonus: $${bonus}`);
+
 };
+
+//Task 4- Subscription Pricing Model
+function calculateSubscriptionCost(plan, months, discount=0) {
+    let cost;
+    if (plan === "Basic") {
+        cost = 10;
+    } else if (plan === "Premium") {
+        cost = 20;
+    } else if (plan === "Enterprise") {
+        cost = 30;
+    };
+    let totalCost = (cost * months) - discount;
+    console.log(`Total Cost: $${totalCost}`);
+    return totalCost;
+   
+};
+
+
+calculateSubscriptionCost("Basic", 6, 10);
+calculateSubscriptionCost("Premium", 12, 0);
 
     
     
